@@ -1,6 +1,6 @@
 {% set provider = "prometheus" %}
 {% set goname = "github.com/prometheus/"+provider.lower() %}
-{% set version = "2.23.0" %}
+{% set version = "2.24.1" %}
 
 {% set name = goname.split('/')[-1] %}
 {% set pkg_src = ('src/'+goname).replace("/",os.sep) %}
@@ -12,7 +12,7 @@ package:
 source:
   - folder: {{ pkg_src }}
     url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-    sha256: 7ef1d61052fe3dace20b89ab287a6a0e835f8f111ab41584aa39b80f6093842b
+    sha256: 9e08bacde869c6c4b68a9e34c7074b812be1391b33d033d3072a5e1ad2debd87
 
 build:
   skip: true  # [win]
