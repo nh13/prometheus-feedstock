@@ -16,7 +16,7 @@ source:
 
 build:
   skip: true  # [win]
-  number: 0
+  number: 1
   script:
     - pushd {{ pkg_src }}/cmd/{{ name }}
     - GOBIN=$(go env GOBIN)  # [not win]
@@ -45,6 +45,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - mxr-conda
     - rluria14
     - adbeda
     - mwilson8
