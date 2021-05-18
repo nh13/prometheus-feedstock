@@ -66,6 +66,7 @@ Installing `prometheus` from the `conda-forge` channel can be achieved by adding
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `prometheus` can be installed with:
@@ -146,6 +147,7 @@ Feedstock Maintainers
 
 * [@adbeda](https://github.com/adbeda/)
 * [@mwilson8](https://github.com/mwilson8/)
+* [@mxr-conda](https://github.com/mxr-conda/)
 * [@oblute](https://github.com/oblute/)
 * [@rluria14](https://github.com/rluria14/)
 
